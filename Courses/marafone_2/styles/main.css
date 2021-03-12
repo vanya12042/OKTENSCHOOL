@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+.body-item {
+    display: flex;
+    justify-content: center;
+}
+
+.left_items {
+    margin: 20px;
+    width: 25%;
+    height: 600px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left_items > h1 {
+    margin: 10px;
+}
+
+.left_items > p {
+    margin: 10px;
+    text-align: justify;
+}
+
+.right_items {
+    width: 75%;
+    height: 600px;
+    display: flex;
+    margin: 20px;
+}
+
+.content-right {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 30px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.content-right > img {
+    width: 100%;
+}
+
+.content-right > p {
+    margin: 10px;
+    text-align: justify;
+}
+

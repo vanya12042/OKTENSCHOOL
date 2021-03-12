@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.link {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: black;
+    color: white;
+    text-decoration-line: none;
+}
+
+.link:active {
+    coolor:red;
+}
+
+.link:hover {
+    background-color: grey;
+    color: black;
+}
+
+.tab tr{
+    border: 1px solid black;
+    background-color: grey;
+    color: white;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+img {
+    border: 4px solid grey;
+    border-radius: 4px;
+}
+
