@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wiki-body {
+    display: flex;
+}
+
+.left-sidebar {
+    height: 2500px;
+    width: 200px;
+    background-color: #eaeaea;
+    border-right: 1px solid dodgerblue;
+}
+
+.logo-wiki {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_up {
+    border-top: 1px solid grey;
+}
+
+.menu > span {
+    color: #54595d;
+    font-size: 12px;
+}
+
+.menu {
+    margin: 15px 20px 0 30px;
+}
+
+.menu_up li a {
+    color: #0645ad;
+    font-size: 12px;
+}
+
+.menu_up > li {
+    margin: 2px 0 2px 0;
+    list-style: none;
+}
+
+.menu_up_an li a {
+    color: #0645ad;
+    font-size: 12px;
+}
+
+.menu_up_an > li {
+    margin: 2px 0 2px 0;
+    list-style: none;
+}
+
+.menu_up li a:hover {
+    text-decoration: underline;
+}
+
+.menu_up_an li a:hover {
+    text-decoration: underline;
+}
+
+.right-sidebar {
+    display: block;
+    width: fit-content;
+    justify-content: flex-end;
+    height: 90px;
+    background-color: #eaeaea;
+}
+
+.right-ul {
+    margin-right: 10px;
+}
+
+.right-ul li > a {
+    color: #0645ad;
+    font-size: 12px;
+}
+
+.right-ul li {
+    color: #54595d;
+}
+
+.head-login ul {
+    display: flex;
+    list-style: none;
+}
+
+.head-login {
+    display: flex;
+    justify-content: flex-end;
+    color: #0645ad;
+    font-size: 12px;
+}
+
+.right-ul li > a:hover {
+    text-decoration: underline;
+}
+
+.head-login ul > li {
+    margin: 10px 5px 10px 5px;
+}
+
+/*Меню Читати, зміни та інше*/
+
+.right-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.r-m {
+    display: flex;
+    margin-right: 20px;
+}
+
+.btn-left {
+    display: flex;
+}
+
+.btn-right {
+    display: flex;
+}
+
+.btn-right li a, .btn-left li a {
+    color: #0645ad;
+    font-size: 13px;
+}
+
+.btn-left li, .btn-right li {
+    list-style: none;
+    padding: 0 10px 0 10px;
+}
+
+.btn-left li > a:hover, .btn-right li a:hover {
+    text-decoration: underline;
+}
+
+.btn-left > li:hover, .btn-right > li:hover {
+    border-right: 1px solid blue;
+    border-left: 1px solid blue;
+}
+
+/*Контент*/
+
+.content {
+    margin: 40px 20px 20px 20px;
+}
+
+.i-wiki p {
+    font-size: 12px;
+}
+
+.h-cont h1 {
+    font-family: 'Linux Libertine';
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+}
+
+.i-wiki p {
+    margin-top: 10px;
+}
+
+.block_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    background-color: #eaf3ff;
+    margin: 4px 0 0 10px;
+    border: 1px solid grey;
+}
+
+.block_1 p {
+    color: #54595d;
+    font-size: 12px;
+}
+
+.block_2 {
+    height: 25px;
+    background-color: white;
+    margin: 0 0 4px 25px;
+    border: 1px solid grey;
+}
+
+.wiki-link {
+    margin: 10px 0 0 0;
+}
+
+.wiki-link span {
+    font-size: 15px;
+    font-style: italic;
+}
+
+/*body content*/
+
+.body-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-cont {
+    width: 75%;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.right-cont {
+    width: 270px;
+    background-color: #f9f9f9;
+    border: 1px solid grey;
+}
+
+/*COntEnt*/
+
+.left-cont > p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.cont-block {
+    width: fit-content;
+    background-color: #f9f9f9;
+    margin: 10px 0 10px 0;
+    border: 1px solid grey;
+    font-size: 14px;
+}
+
+.cont-ol li  {
+    margin: 5px 0 5px 0;
+}
+
+.cont-ol li > a {
+    color: #0645ad;
+}
+
+.cont-block .cont-h {
+    text-align: center;
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+}
+
+
+.cont-ol {
+    margin: 5px 10px 10px 30px;
+}
+
+.cont-ol ol {
+    margin-left: 20px;
+}
+
+/*CONTENT BLOCKS*/
+
+.cont-life > span {
+    display: block;
+    font-family: 'Linux Libertine';
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.cont-life-ad span {
+    display: block;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+/*Table*/
+
+.tab caption {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tab caption span {
+    font-style: italic;
+}
+
+.more-info span {
+    color: #54595d;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.tab tr td {
+    font-size: 12px;
+}
+
+.left-tab {
+    font-weight: bold;
+    margin: 0 5px 0 5px;
+    display: block;
+    vertical-align: top;
+}
+
+.will_sm_bonus {
+    text-align: center;
+    font-weight: bold;
+}
+
+.wS_bonus_1 a {
+    display: inline-block;
+    margin: 2px 5px 2px 5px;
+}
