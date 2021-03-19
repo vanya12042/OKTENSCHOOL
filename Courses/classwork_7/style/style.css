@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 .header {
     width: 100%;
@@ -21,7 +22,7 @@
 
 .content-body {
     width: 100%;
-    height: 800px;
+    height: 1300px;
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@
 
 .section {
     width: 25%;
-    height: 100%;
+    height: auto;
     background-color: grey;
 }
 
@@ -43,7 +44,7 @@
 
 .nav-section {
     width: auto;
-    height: 75%;
+    height: 77%;
     background-color: tomato;
     margin: 10px;
 }
@@ -57,7 +58,7 @@
 
 .section-body {
     width: 74.7%;
-    height: 100%;
+    height: auto;
     background-color: gold;
     margin-left: 5px;
 }
@@ -73,7 +74,78 @@
 
 .article {
     width: auto;
-    height: 33%;
+    height: 87.75%;
     background-color: aqua;
+    margin: 10px 10px 10px 10px;
+}
+
+.article-content-1 {
+    width: auto;
+    height: 45%;
+    background-color: green;
+    margin: 10px 0 10px 0;
+}
+
+.article-content-2 {
+    width: auto;
+    height: 45%;
+    background-color: green;
+    margin: 10px 0 10px 0;
+}
+
+.content {
+    display: flex;
+    width: auto;
+    height: 76.3%;
+    background-color: #067894;
     margin: 10px;
+}
+
+.p-2 {
+    width: 70%;
+    height: auto;
+    background-color: gold;
+    margin: 10px;
+}
+
+.ass_cont {
+    width: 30%;
+    height: auto;
+    background-color: #eaf3ff;
+    margin: 10px;
+}
+
+.footer-body {
+    width: auto;
+    height: 7.3%;
+    background-color: #45c4e3;
+    margin: 10px;
+}
+
+.header-content {
+    width: auto;
+    height: 10%;
+    background-color: grey;
+    margin: 10px;
+}
+
+.p-1 {
+    width: auto;
+    height: 37%;
+    background-color: tomato;
+    margin: 10px;
+}
+
+.footer-content {
+    width: auto;
+    height: 8%;
+    background-color: azure;
+    margin: 10px 10px 0 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #0645ad;
+    margin-top: 10px;
 }
