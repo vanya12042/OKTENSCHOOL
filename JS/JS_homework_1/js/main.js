@@ -1,4 +1,5 @@
 // присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
+
 let string_1 = 'hello';
 let string_2 = 'owu';
 let string_3 = 'com';
@@ -39,6 +40,7 @@ alert(`${string_1} ${string_2} ${string_3} ${string_4} ${num_1} ${num_2} ${num_3
 
 
 // - Создать 3 числовых и 3 стринговых константы. Вывести каждую при помощи console.log , alert, document.write
+
 const INSTAGRAM = 'vanya.vol';
 const TELEGRAM = 'vanya.streetworkout.sw.vol@gmail.com';
 const FACEBOOK = 'vanya.streetworkout.sw.vol@gmail.com';
@@ -55,59 +57,74 @@ let Name = prompt('Input your name: ');
 let LastName = prompt('Input your last name: ');
 let FirstName = prompt('Input your first name: ');
 
-document.write('<h4>' + Name + LastName + FirstName + '</h4>');
-console.log(Name + LastName + FirstName);
-alert(Name + LastName + FirstName);
+document.write('<h4>' + Name + ' ' + LastName + ' ' + FirstName + '</h4>');
+console.log(Name + ' ' + LastName + ' ' + FirstName);
+alert(Name + ' ' + LastName + ' ' + FirstName);
 
 // - Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
 
-document.write('<h4>' + 'Name: ' + Name + '<br>' + 'Last name: ' + LastName + '<br>' + 'First name: ' + FirstName + '</h4>');
-console.log('Name: ' + Name  + 'Last name: ' + LastName + 'First name:' + FirstName );
-alert('Name: ' + Name + ' | ' +'Last name: ' + LastName +  ' | ' + 'First name: ' + FirstName );
+let person = Name + ' ' + LastName + ' ' + FirstName;
+document.write('<h5>' + person + '</h5>');
 
 // - Взять задние 4 и 5 и применить его к ФИО всех членов своей семьи.
 
-let NameMother = 'Orusya';
-let NameFather = 'Vasyl';
-document.write('<h4>' + 'Name mother: ' + NameMother + 'Last name: ' + LastName + '</h4>');
-console.log('Name mother: ' + NameMother  + ', ' + 'Last name mother: ' + LastName);
-alert('Name mather: ' + NameMother + ', ' + 'Last name mother: ' + LastName);
-document.write('<h4>' + 'Name father: ' + NameFather + 'Last name: ' + LastName + '</h4>');
-console.log('Name father: ' + NameFather  + ', ' + 'Last name father: ' + LastName);
-alert('Name father: ' + NameFather + ', ' + 'Last name father: ' + LastName);
+
 // - при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
 
-let x = prompt('Iput x: ');
-let y = prompt('Iput y: ');
-let z = prompt('Iput z: ');
+let x = +prompt('Input x: ');
+let y = +prompt('Input y: ');
+let z = +prompt('Input z: ');
 
-parseInt(x)
-parseInt(y)
-parseInt(z)
-
-document.write(x);
-document.write(y);
-document.write(z);
-console.log(x);
-console.log(y);
-console.log(z);
-alert(x + y + z);
+console.log(x + y + z);
 
 // - при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
 
+let a = prompt('input 4 numbers (number 1):');
+let b = prompt('input 4 numbers (number 2):');
+let c = prompt('input 4 numbers (number 3):');
+let d = prompt('input 4 numbers (number 4):');
+let result = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d);
 
+console.log(result);
 
 // - при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+
+a = prompt('input (number 1):');
+b = prompt('input (number 2):');
+c = prompt('input (number 3):');
+result = parseFloat(a) + parseFloat(b) + parseFloat(c);
+console.log(result);
+
 // - при помощи prompt()  получить 3 числа с плавающей точекой. Округлить их при помощи Math.round Сложить их между собой записав результат в переменную  и вывести в консоль браузера
+
+a = prompt('input float 1');
+b = prompt('input float 2');
+c = prompt('input float 3');
+
+console.log(Math.round(a) + Math.round(b) + Math.round(c));
+
 // - при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
+
+a = prompt('input int (number 1):');
+b = prompt('input intfloat');
+
+parseInt(a);
+parseInt(b);
+
+console.log(Math.pow(a, b));
+
 // - При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль let a = 100; let b = '100'; let c = true; let d = undefined;
+
+let a_a = 100; let b_b = '100'; let c_c = true; let d_d = undefined;
+console.log(typeof a_a,typeof b_b, typeof c_c, typeof d_d);
+
 // - Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
 //     В одинаковых выражениях в задании не использовать два одинаковых оператора.
 //     Каждое выражение вложить в свою переменную
-// 5 ? 6 -> true
-// 5 ? 6 -> false
-// 5 ? 6 -> false
-// 5 ? 6 -> false
+// 5 < 6 -> true
+// 5 <= 6 -> false
+// 5 > 6 -> false
+// 5 >= 6 -> false
 // 10 ? 10 -> true
 // 10 ? 10 -> true
 // 10 ? 10 -> false
@@ -115,6 +132,19 @@ alert(x + y + z);
 // 10 ? 10 -> false
 // 123 ? '123' -> false
 // 123 ? '123' -> true
+
+console.log(5 < 6);
+console.log(5 > 6);
+console.log(5 >= 6);
+console.log(5 === 6);
+console.log(10 === 10);
+console.log(10 >= 10);
+console.log(10 !== 10);
+console.log(10 < 10);
+console.log(10 > 10);
+
+
+
 //
 // Дополнительно:
 //     - Посмотрев на следюующие выражения, скажите, каков будет вывод в консоль
