@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 92px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #1d8dfc;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1720px;
+}
+
+nav {
+    margin-left: 100px;
+    column-gap: 35px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.nav-items a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #292929;
+    text-transform: uppercase;
+    text-decoration: none;
+    max-width: 200px;
+}
+
+.nav-items a:hover {
+    color: #ffa600;
+}
+
+.button button {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: 1px solid #1d8dfc;
+    color: #1d8dfc;
+    font-weight: bold;
+}
+
+.button button:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.body-content {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 101px 93px 245px
+}
+
+.left-content {
+    width: 45%;
+}
+
+.right-content {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.right-content img{
+    width: 100%;
+}
+
+.left-content h3 {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FF9638;
+}
+
+.left-content h1 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.left-content > p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-text p {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.left-content h1 > span {
+    color: #3298F2;
+}
+
+.first-text p:last-child {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.button-content button {
+    width: 382px;
+    height: 61px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #292929;
+    background: #FF9638;
+    border-radius: 5px;
+    border: none;
+    margin-top: 120px;
+}
+
+.play, .play-first, .play-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}
+
+.play-first {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.play-play {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    border: 1px solid red;
+}

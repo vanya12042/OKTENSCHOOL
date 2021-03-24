@@ -75,7 +75,6 @@
 .article {
     width: auto;
     height: 87.75%;
-    background-color: aqua;
     margin: 10px 10px 10px 10px;
 }
 
@@ -117,9 +116,9 @@
 
 .footer-body {
     width: auto;
-    height: 7.3%;
+    height: 8%;
     background-color: #45c4e3;
-    margin: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .header-content {
