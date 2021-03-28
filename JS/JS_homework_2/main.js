@@ -152,67 +152,360 @@
 //     }
 // }
 
-
 // // Додатково
+
 // // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+// let arrayLet = ['a', 'b', 'c'];
+// let letter = '';
+// for (let i = 0; i < arrayLet.length; i++) {
+//     letter = letter + arrayLet[i];
+// }
+//
+// console.log(letter);
+
 // // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+// let arrayLet = ['a', 'b', 'c'];
+// let letter = '';
+// let i = 0;
+// while (i < arrayLet.length){
+//     letter = letter + arrayLet[i];
+//     i++;
+// }
+// console.log(letter);
+
 // // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-// // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-// //
-// // =================
-// // =================
-// // =================
-// // =================
-// //
+// let arrayLet = ['a', 'b', 'c'];
+// let letter = '';
+// for (let index of arrayLet) {
+//     letter = letter + index;
+// }
+// console.log(letter);
+
 // // - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
+// let arrayLetter = ['a', 'b', 'c'];
+// let arrayNum = [1, 2, 3];
+// for (let i = 0; i < arrayNum.length; i++) {
+//     arrayLetter.push(arrayNum[i]);
+// }
+// console.log(arrayLetter);
+
 // // - Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
-// // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
+// let arrayAddNum = [1, 2, 3];
+// for (let i = arrayAddNum.length; i >= 0; i--) {
+//     console.log(arrayAddNum[i]);
+// }
+//
+// // OR
+//
+// console.log(arrayAddNum.reverse());
+
+// // // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
+// let arrayAddNum = [1, 2, 3];
+// let num = 4;
+// for (let i = arrayAddNum.length; i < 6; i++) {
+//     arrayAddNum[i] = num;
+//     num++;
+// }
+// console.log(arrayAddNum);
+//
+// // OR
+//
+// arrayAddNum = [1, 2, 3];
+// let arrayNum = [4, 5, 6];
+// console.log(arrayAddNum.concat(arrayNum));
+//
+// // OR
+//
+// for (let i = 0; i < arrayNum.length; i++) {
+//     arrayAddNum.push(arrayNum[i]);
+// }
+// console.log(arrayAddNum);
+
 // // - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
+// let numArrayFirst = [1, 2, 3];
+// let numArraySecond = [4, 5, 6];
+// console.log(numArrayFirst);
+// for (let i = 2; i >= 0; i--) {
+//     numArrayFirst.unshift(numArraySecond[i]);
+// }
+// console.log(numArrayFirst);
+
 // // - Дан масив ['js', 'css', 'jq']. Виведіть на екран перший елемент за допомогою shift()
+// let arrayCode = ['js', 'css', 'jq'];
+// console.log(arrayCode.shift(0));
+
 // // - Дан масив ['js', 'css', 'jq']. Виведіть на екран останній елемент за допомогою pop()
+// let arrayCode = ['js', 'css', 'jq'];
+// console.log(arrayCode.pop(2));
+
 // // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [4, 5].
+// let arrayNumbers = [1, 2, 3, 4, 5];
+// console.log(arrayNumbers.slice(3,5));
+
 // // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1,2].
+// let arrayNumbers = [1, 2, 3, 4, 5];
+// console.log(arrayNumbers.slice(0,2));
+
 // // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice перетворіть масив в [1, 4, 5].
+// let arrayNumbers = [1, 2, 3, 4, 5];
+// arrayNumbers.splice(1,2 );
+// console.log(arrayNumbers);
+
 // // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+// let arrayNumbers = [1, 2, 3, 4, 5];
+// arrayNumbers.splice(3, 0, 'a', 'b', 'c');
+// console.log(arrayNumbers);
+
 // // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+// let arrayNumbers = [1, 2, 3, 4, 5];
+// arrayNumbers.splice(1,0,'a', 'b')
+// arrayNumbers.splice(6,0,'c');
+// arrayNumbers.splice(9,0,'e');
+// console.log(arrayNumbers);
+
 // // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+// let arrayTenNum = [];
+// for (let i = 0; i < 10; i++) {
+//     arrayTenNum[i] = Math.floor(Math.random() * 10);
+// }
+// console.log(arrayTenNum);
+// for (let i = 0; i < 10; i++) {
+//     if (arrayTenNum[i] % 2 === 0) {
+//         console.log(arrayTenNum[i]);
+//     }
+// }
+
 // // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу та push () скопіювати значення одного масиву в інший
+// let arrayTenNum1 = [];
+// let arrayTenNum2 = [];
+// for (let i = 0; i < 10; i++) {
+//     arrayTenNum1[i] = Math.floor(Math.random() * 10);
+// }
+// console.log(arrayTenNum1);
+// for (let i = 0; i < arrayTenNum1.length; i++) {
+// arrayTenNum2.push(arrayTenNum1[i])
+// }
+// console.log(arrayTenNum2);
+
 // // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
-// //
-// //
-// // ============
-// //
+// let arrayTenNum1 = [];
+// let arrayTenNum2 = [];
+// let i = 0;
+// for (let i = 0; i < 10; i++) {
+//     arrayTenNum1[i] = Math.floor(Math.random() * 10);
+// }
+// console.log(arrayTenNum1);
+// while (i < arrayTenNum1.length) {
+//     arrayTenNum2.push(arrayTenNum1[i])
+//     i++;
+// }
+// console.log(arrayTenNum2);
+
+// // ===============================================================================
+
 // // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+// let ArrayNumbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // //     1. перебрати його циклом while
+// let i = 0;
+// while (i < ArrayNumbers.length) {
+//     console.log(ArrayNumbers[i]);
+//     i++;
+// }
 // //     2. перебрати його циклом for
+// for (let index = 0; index < ArrayNumbers.length; index++) {
+//     console.log(ArrayNumbers[index]);
+// }
+// // //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// i = 0;
+// while (i < ArrayNumbers.length) {
+//     if (ArrayNumbers[i] % 2 === 1) {
+//         console.log(ArrayNumbers[i]);
+//     }
+//     i++;
+// }
+// // // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// for (let index = 0; index < ArrayNumbers.length; index++) {
+//     if (ArrayNumbers[index] % 2 === 1) {
+//         console.log(ArrayNumbers[index]);
+//     }
+// }
+// // // 5. перебрати циклом while та вивести  числа тільки парні  значення
+// i = 0;
+// while (i < ArrayNumbers.length) {
+//     if (ArrayNumbers[i] % 2 === 0) {
+//         console.log(ArrayNumbers[i]);
+//     }
+//     i++;
+// }
+// // // 6. перебрати циклом for та вивести  числа тільки парні  значення
+// for (let index = 0; index < ArrayNumbers.length; index++) {
+//     if (ArrayNumbers[index] % 2 === 0) {
+//         console.log(ArrayNumbers[index]);
+//     }
+// }
+// // // 7. замінити кожне число кратне 3 на слово "okten"
+// for (let index = 0; index < ArrayNumbers.length; index++) {
+//     if (ArrayNumbers[index] % 3 === 0) {
+//         ArrayNumbers[index] = 'okten';
+//     }
+// }
+// console.log(ArrayNumbers);
+// // // 8. вивести масив в зворотньому порядку.
+// console.log(ArrayNumbers.reverse());
+// // // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+// while (i < ArrayNumbers.length) {
+//     console.log(ArrayNumbers[i]);
+//     i++;
+// }
+
+// //     2. перебрати його циклом for
+// for (let index = ArrayNumbers.length-1; index >= 0; index--) {
+//     console.log(ArrayNumbers[index]);
+// }
 // //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// i = ArrayNumbers.length-1;
+// while (i >= 0) {
+//     if (ArrayNumbers[i] % 2 === 1) {
+//         console.log(ArrayNumbers[i]);
+//     }
+//     i--;
+// }
 // // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
-// // 5. перебрати циклом while та вивести  числа тільки парні  значення
-// // 6. перебрати циклом for та вивести  числа тільки парні  значення
-// // 7. замінити кожне число кратне 3 на слово "okten"
-// // 8. вивести масив в зворотньому порядку.
-// // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-// // 10
-// // створити пустий масив та :
-// //     - заповнити його 50 парними числами за допомоги циклу.
-// // - заповнити його 50 непарними числами за допомоги циклу.
-// //
-// //
-// // 1
-// // створити пустий масив та :
-// //     1. заповнити його 50 парними числами за допомоги циклу.
-// // 2. заповнити його 50 непарними числами за допомоги циклу.
-// // 3. используя Math.random заполнить массив из ???(сколько хотите) элементов.
-// //     диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)
-// // 2. вывести на консоль  каждый третий елемент
-// // 3. вывести на консоль  каждый третий елемент
-// // но при условии что его значение является парным.
-// // 4. вывести на консоль  каждый третий елемент
-// // но при условии что он имеет парное значение и
-// // записать их в другой массив.
-// // 5. Вывести каждый елемент массива у которого соседний с права элемент - парный
-// // 5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
-// //
-// // 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
-// // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
-// // додати його в інший масив.
+// for (let index = ArrayNumbers.length-1; index >= 0; index--) {
+//     if (ArrayNumbers[index] % 2 === 1) {
+//         console.log(ArrayNumbers[index]);
+//     }
+// }
+// // // 5. перебрати циклом while та вивести  числа тільки парні  значення
+// i = ArrayNumbers.length-1;
+// while (i >= 0) {
+//     if (ArrayNumbers[i] % 2 === 0) {
+//         console.log(ArrayNumbers[i]);
+//     }
+//     i--;
+// }
+// // // 6. перебрати циклом for та вивести  числа тільки парні  значення
+// for (let index = ArrayNumbers.length-1; index >=0 ; index--) {
+//     if (ArrayNumbers[index] % 2 === 0) {
+//         console.log(ArrayNumbers[index]);
+//     }
+// }
+// // // 7. замінити кожне число кратне 3 на слово "okten"
+// for (let index = ArrayNumbers.length-1; index >=0 ; index--) {
+//     if (ArrayNumbers[index] % 3 === 0) {
+//         ArrayNumbers[index] = 'okten';
+//     }
+// }
+// console.log(ArrayNumbers);
+// // // 8. вивести масив в зворотньому порядку.
+// for (let index = ArrayNumbers.length-1; index >=0 ; index--) {
+//     console.log(ArrayNumbers[index]);
+// }
+
+// // створити пустий масив та
+// let ArrayEmpty = [];
+// let ParityCount;
+// let i = 0;
+// // //     - заповнити його 50 парними числами за допомоги циклу.
+// while (ArrayEmpty.length < 50) {
+//     ParityCount = Math.floor(Math.random() * 11);
+//     if (ParityCount % 2 === 0) {
+//         ArrayEmpty[i] = ParityCount;
+//         i++;
+//     }
+// }
+// console.log(ArrayEmpty);
+// // // - заповнити його 50 непарними числами за допомоги циклу.
+// i = 0;
+// ArrayEmpty = [];
+// while (ArrayEmpty.length < 50) {
+//     ParityCount = Math.floor(Math.random() * 11);
+//     if (ParityCount % 2 === 1) {
+//         ArrayEmpty[i] = ParityCount;
+//         i++;
+//     }
+// }
+// console.log(ArrayEmpty);
+//
+// // // 3. используя Math.random заполнить массив из ???(сколько хотите) элементов.
+// ArrayEmpty = [];
+// for (let c = 0; c < 100; c++) {
+//     ArrayEmpty[c] = Math.floor(Math.random() * 11);
+// }
+// console.log(ArrayEmpty);
+//
+//
+// // //     диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)
+// ArrayEmpty = [];
+// for (let c = 0; c < 100; c++) {
+//     ArrayEmpty[c] = Math.floor(Math.random() * (733 - 8) + 8);
+// }
+// console.log(ArrayEmpty);
+//
+// // // 2. вывести на консоль  каждый третий елемент
+// i = 0;
+// while (i < ArrayEmpty.length){
+//     console.log(ArrayEmpty[i])
+//     i +=3
+// }
+// // // 3. вывести на консоль  каждый третий елемент
+// // // но при условии что его значение является парным.
+// i = 0;
+// while (i < ArrayEmpty.length){
+//     if (ArrayEmpty[i] % 2 === 0){
+//     console.log(ArrayEmpty[i])
+//     }
+//     i +=3
+// }
+// // // 4. вывести на консоль  каждый третий елемент
+// // // но при условии что он имеет парное значение и
+// // // записать их в другой массив.
+// let ArrNext = [];
+// i = 0;
+// while (i < ArrayEmpty.length){
+//     if (ArrayEmpty[i] % 2 === 0){
+//         ArrNext.push(ArrayEmpty[i])
+//     }
+//     i +=3
+// }
+// console.log(ArrNext);
+// // // 5. Вывести каждый елемент массива у которого соседний с права элемент - парный
+// for (let c = 0; c < ArrayEmpty.length; c++){
+//     if (ArrayEmpty[c] % 2 === 0) {
+//         console.log(ArrayEmpty[c-1]);
+//     }
+// }
+// // // 5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
+// let ArrNumSum = [100,250,50,168,120,345,188];
+// let sum = 0;
+// for (let j = 0; j < ArrNumSum.length; j++){
+//     sum =+ ArrNumSum[j];
+// }
+// console.log(Math.round(sum / ArrNumSum.length));
+// // // 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+// let ArrayRand = [];
+// let ArrayX = [];
+// for (let k = 0; k < 10; k++) {
+//     ArrayRand[k] = Math.floor(Math.random() * 20);
+// }
+// console.log(ArrayRand);
+// for (let k = 0; k < 10; k++) {
+//     ArrayRand[k] = ArrayRand[k] * 5;
+// }
+// console.log(ArrayRand);
+// for (let k = 0; k < 10; k++) {
+//     ArrayX[k] = ArrayRand[k];
+//     delete ArrayRand[k];
+// }
+// console.log(ArrayRand);
+// console.log(ArrayX);
+// // // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
+// // // додати його в інший масив.
+// let ArrayObject = ['Hello', 'Green', 414, true, false, 2.443, 0];
+// let ArrayObjectNumbers = [];
+// for (let k = 0; k <ArrayObject.length; k++){
+//     if (typeof ArrayObject[k] === 'number'){
+//         ArrayObjectNumbers.push(ArrayObject[k]);
+//     }
+// }
+// console.log(ArrayObjectNumbers);
